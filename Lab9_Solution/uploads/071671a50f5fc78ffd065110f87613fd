@@ -1,0 +1,44 @@
+mvc - dispatcher - servlet
+
+        <property name="url" value="jdbc:mysql://127.0.0.1:3306/qualitifydb?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+
+        <property name="username" value="root"/>
+        <property name="password" value="Root"/>
+        <property name="password" value="root"/>
+        <property name="maxActive" value="8"/>
+        <property name="maxIdle" value="4"/>
+        <property name="maxWait" value="900000"/>
+
+spring - database ---- fix root
+
+
+app.properties
+
+
+@ -9,10 +9,10 @@ url=http://localhost:8080/${projectUrl}/
+
+
+#C:\Users\User\Projects\MarnEtGondoir\MarnEtGondoire
+pathNetbeansProject=C:${spliter}Users${spliter}elias${spliter}OneDrive${spliter}Desktop${spliter}Work${spliter}MarnEtGondoir things${spliter}
+pathNetbeansProjectForMedia=C:${spliter}Users${spliter}Acer${spliter}Desktop${spliter}Work${spliter}MarnEtGondoir${spliter}
+
+projectName=BackEnd
+projectName=main
+pathSrcEntities=${spliter}src${spliter}main${spliter}java${spliter}org${spliter}takwin${spliter}ar${spliter}entities${spliter}
+pathSrcServices=${spliter}src${spliter}main${spliter}java${spliter}org${spliter}takwin${spliter}ar${spliter}service{spliter}
+pathSrcModels=${spliter}src${spliter}main${spliter}java${spliter}org${spliter}takwin${spliter}ar${spliter}models${spliter}
+@ -23,7 +23,7 @@ pathSrcControllers=${spliter}src${spliter}main${spliter}java${spliter}org${split
+pathSrcWebInf=${spliter}src${spliter}main${spliter}webapp${spliter}WEB-INF${spliter}
+pathSrcMetaInf=${spliter}src${spliter}main${spliter}webapp${spliter}META-INF${spliter}
+pathSrcRessources=${spliter}src${spliter}main${spliter}resources${spliter}
+targetdir.path=${pathNetbeansProject}${projectName}${spliter}target${spliter}${projectName}-1.0-SNAPSHOT${spliter}
+targetdir.path=${pathNetbeansProject}${projectName}${spliter}src${spliter}main${spliter}webapp${spliter}
+targetdir.path1=${pathNetbeansProjectForMedia}${projectName}${spliter}target${spliter}${projectName}-1.0-SNAPSHOT${spliter}
+pathMySqlDump=C:${spliter}Program Files${spliter}MySQL${spliter}MySQL Server 5.7${spliter}bin${spliter}mysqldump
+pathMySqlImp=C:${spliter}Program Files${spliter}MySQL${spliter}MySQL Server 5.7${spliter}bin${spliter}mysql
+@ -53,4 +53,4 @@ administratorEmail=Qualtify@gmail.com
+
+ipuser=http://198.38.85.43:8080/qa/
+
+firebaseFile=C:\\Users\\Acer\\Desktop\\Work\\MarnEtGondoir\\BackEnd\\src\\main\\webapp\\assets\\qualtify-17946-firebase-adminsdk-v8glo-b3204969cc.json
+firebaseFile=C:\\Users\\elias\\OneDrive\\Desktop\\Work\\MarnEtGondoir things\\main\\src\\main\\webapp\\assets\\qualtify-17946-firebase-adminsdk-v8glo-b3204969cc.json
